@@ -2,7 +2,7 @@
   "friendly_name": "AlmaLinux 9",
   "image_src": "almalinux-9.png",
   "description": "AlmaLinux Desktop",
-  "name": "ghcr.io/hickey/kasm_registry/almalinux-9:latest",
+  "name": "ghcr.io/hickey/kasm_registry/almalinux9:latest",
   "cores": 2,
   "memory": 2768,
   "gpu_count": 0,
