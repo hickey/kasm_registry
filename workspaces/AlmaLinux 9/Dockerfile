@@ -8,8 +8,8 @@ RUN dnf update -y  && \
     echo "kasm-user   ALL = (ALL) ALL" > /etc/sudoers.d/users
 
 # Userspace Runtime
-ENV HOME /home/kasm-user
-WORKDIR $HOME
+#ENV HOME /home/kasm-user
+#WORKDIR $HOME
 USER 1000
 
-CMD ["--tail-log"]
+#CMD ["--tail-log"]
