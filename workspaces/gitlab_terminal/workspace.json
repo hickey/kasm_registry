@@ -1,0 +1,17 @@
+  {
+    "description": "Terminal by DKDC",
+    "docker_registry": "https://index.docker.io/v1/",
+    "name": "registry.gitlab.com/tarpaehack/docker_repo/gitlab_terminal:lastest",
+    "image_src": "dkdc_terminal.png",
+    "categories": [
+      "Desktop"
+    ],
+    "friendly_name": "GitLab Terminal",
+    "architecture": [
+      "amd64"
+    ],
+    "compatibility": [
+      "1.14.x"
+    ],
+    "uncompressed_size_mb": 2000
+  }
