@@ -28,7 +28,7 @@ jobs:
       - name: Build and push
         run: |
           for changed_file in ${{ steps.files.outputs.all }}; do
-            if "${changed_file}" != "${changed_file%/Dockerfile}" ; then
+            if [[ "${changed_file}" != "${changed_file%/Dockerfile}" ]]; then
               build_dir=${changed_file%/Dockerfile}
               img_name=$(echo ${build_dir#workspaces/} | tr 'A-Z' 'a-z')
 
