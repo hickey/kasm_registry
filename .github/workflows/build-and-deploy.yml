@@ -34,8 +34,8 @@ jobs:
               img_name=$(echo ${build_dir#workspaces/} | tr 'A-Z' 'a-z')
 
               echo "***** Building ${changed_file}"
-              docker build -t ghcr.io/hickey/${img_name}:latest -f ${changed_file} ${build_dir}
-              docker push ghcr.io/hickey/${img_name}:latest
+              docker build -t ghcr.io/${GITHUB_REPOSITORY}/${img_name}:latest -f ${changed_file} ${build_dir}
+              docker push ghcr.io/${GITHUB_REPOSITORY}/${img_name}:latest
             fi
           done
         #if: steps.changes.outputs.src == 'true'
