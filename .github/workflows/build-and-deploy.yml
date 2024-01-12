@@ -28,9 +28,11 @@ jobs:
       - name: Build and push
         run: |
           for changed_file in ${{ steps.files.outputs.all }}; do
-            img_name=${changed_file#dockerfile-}
+            build_dir=${changed_file%/Dockerfile}
+            img_name=$(echo ${build_dir#workspaces/} | tr 'A-Z' 'a-z')
+
             echo "***** Building ${changed_file}"
-            docker build -t ghcr.io/hickey/${img_name}:latest -f ${changed_file} .
+            docker build -t ghcr.io/hickey/${img_name}:latest -f ${changed_file} ${build_dir}
             docker push ghcr.io/hickey/${img_name}:latest
           done
         #if: steps.changes.outputs.src == 'true'
