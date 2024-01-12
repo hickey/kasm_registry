@@ -12,4 +12,4 @@ RUN dnf update -y  && \
 #WORKDIR $HOME
 USER 1000
 
-#CMD ["--tail-log"]
+CMD ["--tail-log"]
