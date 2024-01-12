@@ -1,0 +1,33 @@
+{
+    "friendly_name": "MATLAB",
+    "image_src": "matlab.png",
+    "description": "MATLAB",
+    "name": "galiold/matlab:latest",
+    "cores": 6,
+    "memory": 32768,
+    "gpu_count": 0,
+    "cpu_allocation_method": "Quotas",
+    "docker_registry": "https://index.docker.io/v1/",
+    "categories": [
+        "Development"
+    ],
+    "require_gpu": false,
+    "enabled": true,
+    "image_type": "Container",
+    "persistent_profile_path": "/home/matlab/{username}",
+    "volume_mappings": {
+        "/mnt/kasm_shared": {
+            "bind": "/share",
+            "mode": "rw",
+            "uid": 1000,
+            "gid": 1000,
+            "required": true
+        }
+    },
+    "architecture": [
+        "amd64"
+    ],
+    "compatibility": [
+        "1.13.x"
+    ]
+}
