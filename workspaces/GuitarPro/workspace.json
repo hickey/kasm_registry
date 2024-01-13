@@ -1,6 +1,5 @@
 {
   "friendly_name": "Guitar Pro 8",
-  "image_src": "",
   "description": "Guitar Pro 8",
   "name": "watford/guitarpro:latest",
   "cores": 2,
