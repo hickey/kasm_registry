@@ -1,0 +1,26 @@
+{
+  "friendly_name": "Lovelace",
+  "description": "Escritorio Developer",
+  "docker_registry": "https://docker.mapache.xyz/v1/",
+  "image_src": "c.png",
+  "name": "docker.mapache.xyz/kasm-lovelace:latest",
+  "run_config": {
+    "hostname": "lovelace",
+    "security_opt": ["seccomp=unconfined"],
+    "privileged": true,
+    "shm_size": "1gb"
+  },
+  "exec_config": { },
+  "categories": [ "Desktop",
+                  "Developer" ],
+  "architecture": [ "amd64" ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x"
+  ],
+  "uncompressed_size_mb": 131418,
+  "enabled": true,
+  "image_type": "Container",
+  "cores": 4,
+  "memory": 4096
+}
