@@ -1,6 +1,6 @@
 {
   "friendly_name": "netbootxyz",
-  "image_src": "blob:https://craigdav.github.io/657e3595-2a87-4561-9205-37df8ca7e008",
+  "image_src": "netbootxyz.png",
   "description": "pxe booting done easy",
   "name": "linuxserver/netbootxyz:latest",
   "cores": 2,
